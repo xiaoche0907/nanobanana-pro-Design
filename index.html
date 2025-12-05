@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>小彻工作室</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              pastel: {
+                bg: '#FFF5F7',       // Very faint pink background
+                card: '#FFFFFF',     // Pure white containers
+                border: '#FDE2E8',   // Light peach-pink border
+                pink: '#FFC4D6',     // Primary Button (Soft Macaron)
+                pinkhover: '#F8B6C8',// Button hover
+                accent: '#F3D1DC',   // Secondary accent
+                text: '#595959',     // Warm Dark Grey (Main Text)
+                muted: '#8C8C8C',    // Muted Text
+                input: '#FFFBFC',    // Very light input bg
+                highlight: '#D4869F' // Darker pink for icons/links
+              },
+              gray: {
+                // Override dark grays to ensure we don't accidentally use them
+                750: '#FDE2E8', 
+                850: '#FFFFFF',
+                950: '#FFF5F7',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Inter', sans-serif; background-color: #FFF5F7; color: #595959; }
+      /* Custom scrollbar for webkit */
+      ::-webkit-scrollbar { width: 8px; height: 8px; }
+      ::-webkit-scrollbar-track { background: #FFF5F7; }
+      ::-webkit-scrollbar-thumb { background: #FFC4D6; border-radius: 4px; }
+      ::-webkit-scrollbar-thumb:hover { background: #F8B6C8; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.10.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "小彻工作室",
+  "description": "专业的 AI 商业视觉总监，分析产品、策划场景策略，并使用 Gemini 2.5 和 3 Pro 模型生成高质量营销视觉图。",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
